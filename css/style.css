@@ -1,0 +1,83 @@
+/* General styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Hero */
+.hero {
+  background: url('../images/hero.jpg') no-repeat center center/cover;
+  height: 90vh;
+  color: white;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Navbar active link */
+.nav-link.active {
+  font-weight: bold;
+  color: #f91616 !important;
+}
+
+/* Cards */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+/* Hero Video Styling */
+.hero {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Slight dark overlay for text readability */
+  padding: 2rem;
+}
+@keyframes fadeUpOut {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.animated-line {
+  animation: fadeUpOut 5s ease-in-out forwards;
+}
