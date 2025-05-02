@@ -27,4 +27,4 @@ This project demonstrates how to host and auto-deploy a static website using:
 
 ## 🔗 Live Website
 
-[Click here to view the site](http://aj-electronics.s3-website-us-east-1.amazonaws.com)
+[Click here to view the site](https://www.ajelectronics.site/)
